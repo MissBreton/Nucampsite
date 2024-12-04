@@ -13,25 +13,28 @@ body {
     font-family: $body-font;
 }
 
-h1, h2, h3 {
-   font-family: $header-font;
+h1,
+h2,
+h3 {
+    font-family: $header-font;
 }
 
 h2 {
-   color: $color-primary;
+    color: $color-primary;
 }
 
 header {
     padding: 30px;
     background-image: linear-gradient(to right, $color-secondary, $color-primary, $color-dark);
     color: white;
+
     h2 {
-    color: $color-pale;
+        color: $color-pale;
     }
 }
 
 footer {
-    background-image:linear-gradient($color-pale,white);
+    background-image: linear-gradient($color-pale, white);
     padding: 20px 0;
 }
 
@@ -52,8 +55,16 @@ footer {
 .carousel-caption {
     background-color: $color-black-transparent;
 }
+
 .carousel {
     border: solid $color-secondary;
+}
+
+#carouselButton {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
 }
 
 @import 'modal';
